@@ -1,0 +1,22 @@
+[
+  {
+    "id": "710eabe3-e831-4839-a167-5e04c80352f3",
+    "patientId": "fe62152e-42c7-49d7-9f84-41b18a3dd59f",
+    "date": "2026-01-29",
+    "time": "10:21",
+    "doctorId": 6,
+    "doctorName": "Dr. Tanay Padgaonkar",
+    "status": "Scheduled",
+    "bookedAt": "2026-01-27T16:51:45.924Z"
+  },
+  {
+    "id": "ae737f12-2652-4f14-883f-10cbd1bd3490",
+    "patientId": "413a5e24-b7ed-4a81-80f9-50db856c3dde",
+    "date": "2026-01-30",
+    "time": "11:49",
+    "doctorId": 12,
+    "doctorName": "Dr. Gitika Sanodia Biyani",
+    "status": "Scheduled",
+    "bookedAt": "2026-01-28T18:19:27.577Z"
+  }
+]

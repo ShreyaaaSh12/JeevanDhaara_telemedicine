@@ -1,0 +1,807 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Ajit G. Desai",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dr. G. P. Ratnaparkhi",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Mayur Jain",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Dr. Bharat Shivdasani",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dr. B. C. Kalmath",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Tanay Padgaonkar",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Dr. Parfulla Kerkar",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dr. Rajiv G Bhagwa",
+    "specialty": "Cardiology Interventional",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "17:00-19:00"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dr. Rajesh Kumar",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Dr. Niketa Sonavane",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Dr. Manish Shah",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Dr. Gitika Sanodia Biyani",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Dr. Swagata Tambe",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Dr. Sunanda Mahajan",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Dr. Vinay Gopalani",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Dr. Vrushali Rane Khan",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Dr. Mansukh Ghala",
+    "specialty": "Dermatology",
+    "village": "",
+    "availability": [
+      "10:00-12:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Dr. Vaishali Joshi",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Dr. Saloni Suchak",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Dr. Prema Kania",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Dr. Gayatri Deshpande",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Dr. Anita Soni",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Dr. Nozer Sheriar",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Dr. Vanita Shekhar Raut",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dr. Nitin Pai-Dhung",
+    "specialty": "Obstetrics & Gynecology",
+    "village": "",
+    "availability": [
+      "09:00-11:00",
+      "15:00-17:00"
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Dr. Balkrishna Padate",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Dr. Santanu Sen",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Dr. Sameer Tulpule",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Dr. Farah Jijina",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Dr. Sameer Shah",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Dr. Abhay Bhave",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Dr. Navin Khattry",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Dr. Ashay Karpe",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Dr. Vrinda Kulkarni",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Dr. Vistasp Antia",
+    "specialty": "Hematology",
+    "village": "",
+    "availability": [
+      "11:00-13:00",
+      "16:00-18:00"
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Dr. Jatin Shah",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Dr. Uma Bansal",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Dr. Amiti Agrawal",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Dr. Firuza Parikh",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Dr. Balasaheb V. Khadbade",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Dr. Ajanta Narvekar",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Dr. Faram Irani",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Dr. Hetal Parikh",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Dr. Indira Hinduj",
+    "specialty": "Gynecology – IVF",
+    "village": "",
+    "availability": [
+      "09:00-12:00"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Dr. Varsha A. Patil",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Dr. Annu Aggarwal",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "Dr. Pettarusp Wadia",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Dr. Anil Venkitachalam",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Dr. Manoj Virani",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Dr. Ashok Sirsat",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Dr. Pankaj Agarwal",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Dr. Harshad Purandare",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 53,
+    "name": "Dr. Nishant Aditya",
+    "specialty": "Neurology – Movement",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 54,
+    "name": "Dr. Uday Andar",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 55,
+    "name": "Dr. Anaita Hegde",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 56,
+    "name": "Dr. Vrajesh Udani",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 57,
+    "name": "Dr. Sumit Pawar",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Dr. Mahesh Sambhare",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 59,
+    "name": "Dr. Shekhar Patil",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 60,
+    "name": "Dr. Viraj Sanghi",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 61,
+    "name": "Dr. Amit Vatkar",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 62,
+    "name": "Dr. Shilpa Kulkarni",
+    "specialty": "Neurology – Pediatrics",
+    "village": "",
+    "availability": [
+      "10:00-13:00"
+    ]
+  },
+  {
+    "id": 63,
+    "name": "Dr. Chandrashekhar Deopujari",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 64,
+    "name": "Dr. Satish Khadilkar",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 65,
+    "name": "Dr. Chandan Mohanty",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 66,
+    "name": "Dr. Vikram S. Karmakar",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 67,
+    "name": "Dr. Maruti Pujari",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 68,
+    "name": "Dr. Nitin Dange",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 69,
+    "name": "Dr. Nirav Mehta",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 70,
+    "name": "Dr. Gurmeet Singh Sawhney",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 71,
+    "name": "Dr. Vivek Agarwal",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 72,
+    "name": "Dr. Abhijit Warade",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 73,
+    "name": "Dr. Sudher Amberkar",
+    "specialty": "Neurosurgery",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 74,
+    "name": "Dr. Batuk Diyora",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 75,
+    "name": "Dr. Vikram Karmarkar",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 76,
+    "name": "Dr. Hrishikesh Sarkar",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 77,
+    "name": "Dr. Abhaya Kumar",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 78,
+    "name": "Dr. Atul Goyal",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 79,
+    "name": "Dr. Ajay Bajaj",
+    "specialty": "Neurosurgery – Vascular",
+    "village": "",
+    "availability": [
+      "11:00-14:00"
+    ]
+  },
+  {
+    "id": 80,
+    "name": "Dr. Hemant Rathore",
+    "specialty": "Nuclear Medicine",
+    "village": "",
+    "availability": [
+      "12:00-15:00"
+    ]
+  },
+  {
+    "id": 81,
+    "name": "Dr. Atul Marwah",
+    "specialty": "Nuclear Medicine",
+    "village": "",
+    "availability": [
+      "12:00-15:00"
+    ]
+  },
+  {
+    "id": 82,
+    "name": "Dr. Sachin Gawde",
+    "specialty": "Nuclear Medicine",
+    "village": "",
+    "availability": [
+      "12:00-15:00"
+    ]
+  },
+  {
+    "id": "8edf889c-ce08-4407-ae81-5f267a7e1d25",
+    "name": "dr.Shaurya",
+    "specialty": "dermatology",
+    "location": "pune",
+    "availability": "9-4",
+    "rating": "4.3"
+  },
+  {
+    "id": "ecfa8ea0-49d7-4fd6-b0ed-a9e5679e277b",
+    "name": "dr.Shaurya",
+    "specialty": "dermatology",
+    "location": "pune",
+    "availability": "9-4",
+    "rating": "4.5"
+  },
+  {
+    "id": "ea578830-d191-4a97-a469-ae4d162480f5",
+    "name": "dr.Shaurya",
+    "specialty": "dermatology",
+    "location": "pune",
+    "availability": "9-4",
+    "rating": "4.7"
+  },
+  {
+    "id": "71e208a8-9dc1-4c40-b87d-e8f17b1f5f6e",
+    "name": "dr.Shaurya",
+    "specialty": "dermatology",
+    "location": "pune",
+    "availability": "9-4",
+    "rating": "4.8"
+  }
+]

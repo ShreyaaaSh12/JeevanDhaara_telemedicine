@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JeevenDhaara - A Modern Telemedicine Portal</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- General Styles & Variables --- */
+        :root {
+            --primary-blue: #2563eb;
+            --primary-green: #22c55e;
+            --dark-gray: #111827;
+            --text-color: #4b5563;
+            --border-color: #e5e7eb;
+            --light-bg: #f9fafb;
+        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; background-color: var(--light-bg); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+        .page-section { padding: 80px 0; }
+        .hidden { display: none !important; }
+
+        /* --- Navigation Bar --- */
+        .navbar { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); padding: 1rem 0; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; }
+        .navbar .container { display: flex; justify-content: space-between; align-items: center; }
+        .nav-logo { font-size: 1.75rem; font-weight: 700; color: var(--dark-gray); text-decoration: none; }
+        .nav-links a { margin-left: 1.5rem; text-decoration: none; color: var(--text-color); font-weight: 600; transition: color 0.3s; }
+        .nav-links a.active { color: var(--primary-blue); }
+
+        /* --- Hero Section --- */
+        .home-hero { text-align: center; padding: 6rem 0; background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); color: white; }
+        .home-hero h1 { font-size: 3.5rem; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.2); margin: 0 0 1rem 0; color: var(--dark-gray); }
+        .home-hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto 2rem auto; opacity: 0.9; color: #374151;}
+        .home-hero .btn { display: inline-block; padding: 16px 36px; border-radius: 50px; text-decoration: none; font-weight: 600; color: #fff; background-color: var(--primary-blue); transition: all 0.3s; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4); }
+        .home-hero .btn:hover { transform: translateY(-3px); box-shadow: 0 7px 20px rgba(37, 99, 235, 0.6); }
+
+        /* --- Section Titles --- */
+        .section-title { text-align: center; margin-bottom: 4rem; }
+        .section-title h2 { font-size: 2.5rem; color: var(--dark-gray); }
+        .section-title p { font-size: 1.1rem; max-width: 600px; margin: 0.5rem auto 0; }
+        
+        /* --- Features & Mission Section --- */
+        .mission-card { background: #fff; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); border: 1px solid var(--border-color); text-align: center; max-width: 800px; margin: 0 auto; }
+        .features-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 2rem; }
+        .feature-card { background: #fff; padding: 2rem; border-radius: 16px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid var(--border-color); transition: transform 0.3s; }
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-icon { width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+        .feature-card h3 { font-size: 1.25rem; color: var(--dark-gray); margin-bottom: 0.5rem; }
+
+        /* --- Forms --- */
+        .form-container { max-width: 600px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1); border: 1px solid var(--border-color); }
+        .form-container h2 { text-align: center; margin-top: 0; margin-bottom: 2rem; color: var(--dark-gray); font-size: 1.75rem; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 600; }
+        .form-group input { width: 100%; padding: 12px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+        .btn-submit { width: 100%; padding: 14px; border: none; border-radius: 8px; background-color: var(--primary-blue); color: #fff; font-weight: 600; font-size: 1rem; cursor: pointer; }
+
+        /* --- Doctor List --- */
+        #doctors-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+        .doctor-card { background: #fff; border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid var(--border-color); transition: transform 0.3s; }
+        .doctor-card:hover { transform: translateY(-5px); }
+        .doctor-card-content { padding: 24px; }
+        .doctor-card h3 { margin: 0 0 4px 0; color: var(--dark-gray); }
+        .doctor-card .specialty { color: var(--primary-blue); font-weight: 600; }
+        .book-btn { display: block; width: calc(100% - 48px); margin: 0 24px 24px; padding: 12px; border: none; background-color: var(--primary-blue); color: #fff; font-weight: 600; cursor: pointer; border-radius: 8px; }
+
+        /* --- Modals --- */
+        .modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); backdrop-filter: blur(5px); z-index: 200; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: opacity 0.3s; }
+        .modal.visible { opacity: 1; visibility: visible; }
+        .modal-content { background: #fff; padding: 2.5rem; border-radius: 16px; width: 90%; max-width: 500px; text-align: center; position: relative; }
+        .modal-close-btn { position: absolute; top: 1rem; right: 1rem; font-size: 2rem; color: #9ca3af; cursor: pointer; border: none; background: none; }
+        .success-icon { width: 80px; height: 80px; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home-page" class="nav-logo">JeevenDhaara</a>
+            <div class="nav-links">
+                <a href="#home-page">Home</a>
+                <a href="#booking-page">Book Appointment</a>
+                <a href="#patient-reg-page">Patient Sign-Up</a>
+                <a href="#doctor-reg-page">For Doctors</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home-page" class="page-section" style="padding: 0;">
+            <div class="home-hero">
+                <h1>Healthcare for All, At Your Doorstep</h1>
+                <p>Bringing quality, affordable medical consultations to every village and home.</p>
+                <a href="#booking-page" class="btn">Book a Consultation Now</a>
+            </div>
+            <div class="container" style="padding-top: 80px;">
+                <div class="mission-card">
+                    <h2>Our Mission</h2>
+                    <p>To bridge the healthcare gap for rural communities. Through low-cost online consultations and user-friendly technology, we're ensuring no family is left behind in receiving quality medical care.</p>
+                </div>
+
+                <div class="section-title" style="margin-top: 80px;">
+                    <h2>Our Core Features</h2>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background-color: #dbeafe;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary-blue);"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><line x1="19" x2="19" y1="8" y2="14"></line><line x1="22" x2="16" y1="11" y2="11"></line></svg></div>
+                        <h3>Easy Registration</h3>
+                        <p>Simple, hassle-free signup for both patients and doctors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background-color: #dcfce7;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary-green);"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" x2="16" y1="2" y2="6"></line><line x1="8" x2="8" y1="2" y2="6"></line><line x1="3" x2="21" y1="10" y2="10"></line></svg></div>
+                        <h3>Flexible Appointments</h3>
+                        <p>Book and reschedule consultations with village-friendly time slots.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon" style="background-color: #f3e8ff;"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #9333ea;"><path d="m15.5 5.5 2.5 2.5-12 12-5-5 12-12z"></path><path d="m18.5 2.5 2.5 2.5"></path><path d="M12 15.5V19l3.5-3.5"></path></svg></div>
+                        <h3>Digital Prescriptions</h3>
+                        <p>Receive secure e-prescriptions directly after your consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="booking-page" class="page-section hidden">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Book an Appointment</h2>
+                    <p>Choose from our network of trusted healthcare professionals.</p>
+                </div>
+                <div id="doctors-list"><p>Loading doctors...</p></div>
+            </div>
+        </section>
+
+        <section id="patient-reg-page" class="page-section hidden">
+            <div class="form-container">
+                <h2>Patient Registration</h2>
+                <form id="patient-reg-form">
+                    <div class="form-group"><label for="patientNameReg">Full Name</label><input type="text" id="patientNameReg" name="name" required></div>
+                    <div class="form-group"><label for="patientAgeReg">Age</label><input type="number" id="patientAgeReg" name="age" required></div>
+                    <div class="form-group"><label for="patientContactReg">10-Digit Contact</label><input type="tel" id="patientContactReg" name="contact" required></div>
+                    <button type="submit" class="btn-submit">Register</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="doctor-reg-page" class="page-section hidden">
+            <div class="form-container">
+                <h2>Join as a Doctor</h2>
+                <form id="doctor-reg-form">
+                    <div class="form-group"><label for="doctorNameReg">Full Name</label><input type="text" id="doctorNameReg" name="name" required></div>
+                    <div class="form-group"><label for="doctorSpecialtyReg">Specialty</label><input type="text" id="doctorSpecialtyReg" name="specialty" required></div>
+                    <div class="form-group"><label for="doctorLocationReg">Location</label><input type="text" id="doctorLocationReg" name="location" required></div>
+                    <div class="form-group"><label for="doctorAvailabilityReg">Availability</label><input type="text" id="doctorAvailabilityReg" name="availability" required></div>
+                    <button type="submit" class="btn-submit">Join Our Network</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div id="feedback-modal" class="modal"><div class="modal-content"><button class="modal-close-btn">&times;</button><div id="success-icon-wrapper" class="success-icon hidden"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--primary-green);"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div><h3 id="modal-title"></h3><p id="modal-message"></p></div></div>
+    <div id="booking-modal" class="modal"><div class="modal-content" style="text-align: left;"><button class="modal-close-btn">&times;</button><h3 style="text-align: center; margin-top: 0;">Book Appointment</h3><form id="booking-form"><input type="hidden" id="doctorId"><input type="hidden" id="doctorName"><div class="form-group"><label for="patientNameBooking">Your Name</label><input type="text" id="patientNameBooking" required></div><div class="form-group"><label for="contactBooking">10-Digit Contact</label><input type="tel" id="contactBooking" required></div><div class="form-group"><label for="dateBooking">Date</label><input type="date" id="dateBooking" required></div><div class="form-group"><label for="timeBooking">Time</label><input type="time" id="timeBooking" required></div><button type="submit" class="btn-submit">Confirm Booking</button></form></div></div>
+
+    <script>
+        // The JavaScript functionality is identical to the previous version.
+        // It controls page navigation, fetches data, and handles form submissions.
+        document.addEventListener('DOMContentLoaded', () => {
+            const pages = document.querySelectorAll('.page-section');
+            const navLinks = document.querySelectorAll('.nav-links a, .home-hero .btn');
+            const feedbackModal = document.getElementById('feedback-modal');
+            const bookingModal = document.getElementById('booking-modal');
+            const doctorsListContainer = document.getElementById('doctors-list');
+            const API_BASE_URL = 'http://localhost:3000';
+
+            const showModal = (title, message, isSuccess = true) => {
+                document.getElementById('modal-title').textContent = title;
+                document.getElementById('modal-message').textContent = message;
+                document.getElementById('modal-title').style.color = isSuccess ? 'var(--dark-gray)' : 'var(--danger-red)';
+                document.getElementById('success-icon-wrapper').classList.toggle('hidden', !isSuccess);
+                feedbackModal.classList.add('visible');
+            };
+
+            const closeModal = (modal) => modal.classList.remove('visible');
+
+            const showPage = (pageId) => {
+                pages.forEach(page => page.classList.add('hidden'));
+                const activePage = document.getElementById(pageId);
+                if (activePage) activePage.classList.remove('hidden');
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.toggle('active', link.hash === `#${pageId}`);
+                });
+            };
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const pageId = e.currentTarget.hash.substring(1);
+                    showPage(pageId);
+                    window.scrollTo(0, 0);
+                });
+            });
+
+            const initialPage = window.location.hash ? window.location.hash.substring(1) : 'home-page';
+            showPage(initialPage);
+
+            const fetchDoctors = async () => {
+                try {
+                    const response = await fetch(`${API_BASE_URL}/doctors`);
+                    const result = await response.json();
+                    if (!result.success) throw new Error('Failed to fetch doctors');
+                    
+                    doctorsListContainer.innerHTML = '';
+                    result.data.forEach(doctor => {
+                        const card = document.createElement('div');
+                        card.className = 'doctor-card';
+                        card.innerHTML = `<div class="doctor-card-content"><h3>${doctor.name}</h3><p class="specialty">${doctor.specialty}</p><p>⭐ ${doctor.rating} | 📍 ${doctor.location || 'N/A'}</p></div><button class="book-btn" data-doctor-id="${doctor.id}" data-doctor-name="${doctor.name}">Book Now</button>`;
+                        doctorsListContainer.appendChild(card);
+                    });
+                } catch (error) {
+                    doctorsListContainer.innerHTML = `<p style="text-align:center;">${error.message}. Is the backend running?</p>`;
+                }
+            };
+            fetchDoctors();
+            
+            document.querySelectorAll('.modal-close-btn').forEach(btn => btn.addEventListener('click', () => {
+                closeModal(feedbackModal);
+                closeModal(bookingModal);
+            }));
+
+            doctorsListContainer.addEventListener('click', (e) => {
+                if (e.target.classList.contains('book-btn')) {
+                    document.getElementById('doctorId').value = e.target.dataset.doctorId;
+                    document.getElementById('doctorName').value = e.target.dataset.doctorName;
+                    bookingModal.classList.add('visible');
+                }
+            });
+
+            // Form Handlers
+            document.getElementById('patient-reg-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const contact = form.contact.value;
+                if (!/^\d{10}$/.test(contact)) {
+                    showModal('Validation Error', 'Contact number must be 10 digits.', false);
+                    return;
+                }
+                const formData = { name: form.name.value, age: form.age.value, contact: contact };
+                try {
+                    const response = await fetch(`${API_BASE_URL}/api/patients/register`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
+                    const result = await response.json();
+                    if (!result.success) throw new Error(result.message);
+                    showModal('Success', 'Patient registered successfully!');
+                    form.reset();
+                } catch (error) {
+                    showModal('Error', error.message, false);
+                }
+            });
+
+            document.getElementById('doctor-reg-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const form = e.target;
+                const formData = { name: form.name.value, specialty: form.specialty.value, location: form.location.value, availability: form.availability.value };
+                try {
+                    const response = await fetch(`${API_BASE_URL}/doctors`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(formData) });
+                    const result = await response.json();
+                    if (!result.success) throw new Error(result.message);
+                    showModal('Success', 'Doctor registered successfully!');
+                    form.reset();
+                    fetchDoctors(); // Refresh doctor list
+                } catch (error) {
+                    showModal('Error', error.message, false);
+                }
+            });
+
+            document.getElementById('booking-form').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const contact = document.getElementById('contactBooking').value;
+                if (!/^\d{10}$/.test(contact)) {
+                    showModal('Validation Error', 'Contact must be 10 digits.', false);
+                    return;
+                }
+                const appointmentData = {
+                    patientName: document.getElementById('patientNameBooking').value,
+                    contact,
+                    date: document.getElementById('dateBooking').value,
+                    time: document.getElementById('timeBooking').value,
+                    doctorId: document.getElementById('doctorId').value,
+                    doctorName: document.getElementById('doctorName').value
+                };
+                try {
+                    const response = await fetch(`${API_BASE_URL}/appointments`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(appointmentData) });
+                    const result = await response.json();
+                    if (!result.success) throw new Error(result.message);
+                    closeModal(bookingModal);
+                    showModal('Success', result.message);
+                    e.target.reset();
+                } catch (error) {
+                    showModal('Error', error.message, false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
