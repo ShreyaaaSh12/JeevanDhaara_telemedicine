@@ -13,6 +13,7 @@ By digitizing the consultation process and creating a structured virtual clinic 
 🎥 Demo Video
 
 Watch the working demonstration of the Jeevandhaara platform.
+https://youtu.be/jxOj7IV6wyg?si=vaN3O_nQZMBTgfei
 
 🚀 Key Features
 🩺 Unified Patient–Doctor Portal
